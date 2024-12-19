@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { environment } from './src/config/constants';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>{`environment: ${environment}`}</Text>
       <StatusBar style="auto" />
     </View>
   );
